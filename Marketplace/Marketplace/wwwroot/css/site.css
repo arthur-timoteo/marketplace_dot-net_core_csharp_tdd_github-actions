@@ -1,0 +1,124 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.component1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.component1-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.component1 > a, .component2-item > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.component1-img {
+    background-color: gray;
+    border-radius: 7px;
+    height: 6vw;
+    width: 10vw;
+}
+
+.component2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.component2-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.component2-item-img {
+    border-radius: 7px;
+    height: 6vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.component2-item-infos > span {
+    text-decoration: line-through;
+}
+
+.component3 {
+    background-color: #fd7e14;
+}
+
+.component3 > .component3-infos {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.carousel-item {
+    height: 20vw;
+}
+
+@media (max-width: 391px) {
+    .component1 {
+        flex-direction: column;
+    }
+
+    .component1-img {
+        height: 32vw;
+        width: 53vw;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 392px) {
+    .component1-img {
+        height: 8vw;
+        width: 15vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .component3 {
+        flex-direction: column;
+    }
+
+    .component3 > .component3-infos {
+        flex-direction: column;
+    }
+
+    .component3 > .component3-infos > img, .component3 > .component3-infos > h2{
+        margin-bottom: 3rem;
+    }
+
+    .component2 {
+        flex-direction: column;
+    }
+
+    .component2-item-img {
+        height: 33vw;
+    }
+}
