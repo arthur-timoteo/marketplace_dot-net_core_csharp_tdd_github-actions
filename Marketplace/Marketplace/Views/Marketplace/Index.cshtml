@@ -1,0 +1,141 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+            
+        </div>
+        <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+            
+        </div>
+        <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+            
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container">
+    <!-- Categories -->
+    <div class="row bg-white rounded-3 p-3 mt-5 mb-5">
+        <h4 class="mb-5"><b>CATEGORIES</b></h4>
+        <div class="component1">
+            <a class="component1-item" href="">
+                <div class="component1-img mb-3"></div>
+                <h5 class="text-center">Category</h5>
+            </a>
+            <a class="component1-item" href="">
+                <div class="component1-img mb-3"></div>
+                <h5 class="text-center">Category</h5>
+            </a>
+            <a class="component1-item" href="">
+                <div class="component1-img mb-3"></div>
+                <h5 class="text-center">Category</h5>
+            </a>
+            <a class="component1-item" href="">
+                <div class="component1-img mb-3"></div>
+                <h5 class="text-center">Category</h5>
+            </a>
+        </div>
+    </div>
+
+    <!-- Newaletter -->
+    <div class="row component3 rounded-3 p-3 mb-5">
+        <div class="col component3-infos">
+            <img src="~/images/email-icon.png" />
+            <h2 class="text-light"><b>Sign up and get the best deals!</b></h2>
+        </div>
+        <div class="col">
+            <form class="d-grid gap-3">
+                <input type="text" class="form-control" placeholder="Name">
+                <input type="email" class="form-control" placeholder="email@email.com">
+                <button type="button" class="btn btn-dark">REGISTER</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bestsellers -->
+    <div class="row bg-white rounded-3 p-3 mb-5">
+        <h4 class="mb-5"><b>BESTSELLERS</b></h4>
+        <div class="component2">
+            <div class="component2-item">
+                <a href="">
+                    <div class="component2-item-img mb-3">
+                        <img src="~/images/box-icon.png"/>
+                    </div>
+                    <div class="component2-item-infos">
+                        <h5>Product name</h5>
+                        <span>U$ 00,00</span>
+                        <h4 class="text-black">U$ 00,00</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="component2-item">
+                <a href="">
+                    <div class="component2-item-img mb-3">
+                        <img src="~/images/box-icon.png"/>
+                    </div>
+                    <div class="component2-item-infos">
+                        <h5>Product name</h5>
+                        <span>U$ 00,00</span>
+                        <h4 class="text-black">U$ 00,00</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="component2-item">
+                <a href="">
+                    <div class="component2-item-img mb-3">
+                        <img src="~/images/box-icon.png"/>
+                    </div>
+                    <div class="component2-infos">
+                        <h5>Product name</h5>
+                        <span>U$ 00,00</span>
+                        <h4 class="text-black">U$ 00,00</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="component2-item">
+                <a href="">
+                    <div class="component2-item-img mb-3">
+                        <img src="~/images/box-icon.png" />
+                    </div>
+                    <div class="component2-infos">
+                        <h5>Product name</h5>
+                        <span>U$ 00,00</span>
+                        <h4 class="text-black">U$ 00,00</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="component2-item">
+                <a href="">
+                    <div class="component2-item-img mb-3">
+                        <img src="~/images/box-icon.png" />
+                    </div>
+                    <div class="component2-infos">
+                        <h5>Product name</h5>
+                        <span>U$ 00,00</span>
+                        <h4 class="text-black">U$ 00,00</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
