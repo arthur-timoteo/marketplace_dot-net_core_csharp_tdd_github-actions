@@ -21,6 +21,10 @@ body {
   margin-bottom: 60px;
 }
 
+.carousel-item {
+    height: 20vw;
+}
+
 .component1 {
     display: flex;
     flex-direction: row;
@@ -34,7 +38,7 @@ body {
     align-items: center;
 }
 
-.component1 > a, .component2-item > a {
+.component1 > a, .component2-item > a, .srch-cmpnt-area-filter > a {
     text-decoration: none;
     color: inherit;
 }
@@ -79,8 +83,55 @@ body {
     justify-content: space-around;
 }
 
-.carousel-item {
-    height: 20vw;
+.srch-cmpnt {
+    display: flex;
+    flex-direction: row;
+}
+
+.srch-cmpnt-area-filter > a > p{
+    margin-bottom: 0.2rem;
+}
+
+.srch-cmpnt-area-products {
+    flex: 1;
+    height: fit-content;
+}
+
+.srch-cmpnt-area-products-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.srch-cmpnt-area-products-item > img {
+    height: 10vw;
+    width: 10vw;
+}
+
+.srch-cmpnt-area-products-item-info {
+    flex: 1;
+}
+
+.srch-cmpnt-area-products-item-info > span {
+    text-decoration: line-through;
+}
+
+.srch-cmpnt-area-products-item > button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+}
+
+.srch-cmpnt-area-products-item > button > i {
+    font-size: 50px;
+}
+
+.srch-cmpnt-area-products-pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 @media (max-width: 391px) {
@@ -92,12 +143,22 @@ body {
         height: 32vw;
         width: 53vw;
     }
+
+    .srch-cmpnt-area-products-item > img {
+        height: 30vw;
+        width: 30vw;
+    }
 }
 
 @media (max-width: 767px) and (min-width: 392px) {
     .component1-img {
         height: 8vw;
         width: 15vw;
+    }
+
+    .srch-cmpnt-area-products-item > img {
+        height: 20vw;
+        width: 20vw;
     }
 }
 
@@ -110,7 +171,7 @@ body {
         flex-direction: column;
     }
 
-    .component3 > .component3-infos > img, .component3 > .component3-infos > h2{
+    .component3 > .component3-infos > img, .component3 > .component3-infos > h2 {
         margin-bottom: 3rem;
     }
 
@@ -120,5 +181,24 @@ body {
 
     .component2-item-img {
         height: 33vw;
+    }
+
+    .srch-cmpnt-area-products-item > button {
+        display: none;
+    }
+}
+
+@media (max-width: 1350px) and (min-width: 768px) {
+    .srch-cmpnt-area-products-item > img {
+        height: 15vw;
+        width: 15vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .srch-cmpnt-area-products-pagination {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

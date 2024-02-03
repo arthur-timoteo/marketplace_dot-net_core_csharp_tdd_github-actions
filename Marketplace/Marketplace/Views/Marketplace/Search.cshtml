@@ -1,0 +1,103 @@
+﻿@{
+    ViewData["Title"] = "Search";
+}
+
+<div class="container srch-cmpnt mt-5">
+    <div class="srch-cmpnt-area-filter pe-5">
+        <h5><b>Categories</b></h5>
+        <a href=""><p>Lorem impsun</p></a>
+        <a href=""><p>Lorem impsun</p></a>
+        <a href=""><p>Lorem impsun</p></a>
+        <a href=""><p>Lorem impsun</p></a>
+
+        <h5 class="mt-5"><b>Brands</b></h5>
+        <a href=""><p>Lorem impsun</p></a>
+        <a href=""><p>Lorem impsun</p></a>
+        <a href=""><p>Lorem impsun</p></a>
+        <a href=""><p>Lorem impsun</p></a>
+
+
+        <h5 class="mt-5"><b>Price</b></h5>
+        <label for="filterPriceProductMin" class="form-label">Minimum Price</label>
+        <input type="number" class="form-control" id="filterPriceProductMin">
+
+        <label for="filterPriceProductMax" class="form-label">Maximum Price</label>
+        <input type="number" class="form-control" id="filterPriceProductMax">
+
+        <h5 class="mt-5"><b>Condition</b></h5>
+        <a href=""><p>Lorem impsun</p></a>
+        <a href=""><p>Lorem impsun</p></a>
+
+
+        <h5 class="mt-5"><b>Product Location</b></h5>
+        <a href=""><p>Lorem impsun</p></a>
+        <a href=""><p>Lorem impsun</p></a>
+        <a href=""><p>Lorem impsun</p></a>
+        <a href=""><p>Lorem impsun</p></a>
+
+    </div>
+    <div class="srch-cmpnt-area-products">
+        <div class="srch-cmpnt-area-products-head mb-3">
+            <div class="row justify-content-end">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5 col-5">
+                    <label class="form-label">Sort products by</label>
+                    <select class="form-select">
+                        <option selected>Bestsellers</option>
+                        <option>Price > High to Low</option>
+                        <option>Price > Low to High</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="srch-cmpnt-area-products-list bg-white rounded-3 p-3">
+            <div class="srch-cmpnt-area-products-item">
+                <img class="px-3" src="~/images/box-icon.png" />
+                <div class="srch-cmpnt-area-products-item-info ps-3">
+                    <h4>Product name</h4>
+                    <p>0 products haven been sold</p>
+                    <span>US$ 00,00</span>
+                    <h3>US$ 00,00</h3>
+                </div>
+                <button type="button" class="btn btn-warning">
+                    <i class="fa fa-shopping-cart mb-3"></i>
+                    <b>ADD CART</b>
+                </button>
+            </div>
+            <hr />
+            <div class="srch-cmpnt-area-products-item">
+                <img class="px-3" src="~/images/box-icon.png" />
+                <div class="srch-cmpnt-area-products-item-info ps-3">
+                    <h4>Product name</h4>
+                    <p>0 products haven been sold</p>
+                    <span>US$ 00,00</span>
+                    <h3>US$ 00,00</h3>
+                </div>
+                <button type="button" class="btn btn-warning">
+                    <i class="fa fa-shopping-cart mb-3"></i>
+                    <b>ADD CART</b>
+                </button>
+            </div>
+            <hr />
+            <div class="srch-cmpnt-area-products-item">
+                <img class="px-3" src="~/images/box-icon.png" />
+                <div class="srch-cmpnt-area-products-item-info ps-3">
+                    <h4>Product name</h4>
+                    <p>0 products haven been sold</p>
+                    <span>US$ 00,00</span>
+                    <h3>US$ 00,00</h3>
+                </div>
+                <button type="button" class="btn btn-warning">
+                    <i class="fa fa-shopping-cart mb-3"></i>
+                    <b>ADD CART</b>
+                </button>
+            </div>
+        </div>
+        <div class="srch-cmpnt-area-products-pagination mt-5">
+            <a href=""><p>Ir para a página 1</p></a>
+            <button type="button" class="btn btn-secondary mb-3">Página Anterior</button>
+            <p>1 de 50</p>
+            <button type="button" class="btn btn-secondary mb-3">Próxima Página</button>
+            <a href=""><p>Ir para a última página</p></a>
+        </div>
+    </div>
+</div>
