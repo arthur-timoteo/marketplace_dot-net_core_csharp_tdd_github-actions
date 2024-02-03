@@ -1,0 +1,33 @@
+name: "2 - [PRO] Build & Test & Promote"
+
+on: 
+  pull_request:
+    types: opened
+    branches: main
+
+jobs:
+  build_test:  
+    if: ${{ !startsWith(github.head_ref, 'docs/') && !startsWith(github.head_ref, 'worflows/') }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+
+  close-pr-to-main-branch:
+    needs:
+      - build_test
+    
+    runs-on: ubuntu-latest
+    steps:
+    - uses: superbrothers/close-pull-request@v3
+
