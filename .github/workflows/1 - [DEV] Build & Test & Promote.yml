@@ -10,21 +10,21 @@ jobs:
     if: ${{ !startsWith(github.head_ref, 'docs/') && !startsWith(github.head_ref, 'worflows/') }}
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./Marketplace
+
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
-      working-directory: ././Marketplace
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      working-directory: ././Marketplace
       run: dotnet restore
     - name: Build
-      working-directory: ././Marketplace
       run: dotnet build --no-restore
     - name: Test
-      working-directory: ././Marketplace
       run: dotnet test --no-build --verbosity normal
 
   open-pr-to-main-branch:
