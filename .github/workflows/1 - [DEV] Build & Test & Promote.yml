@@ -7,7 +7,7 @@ on:
 
 jobs:
   build_test:  
-    if: ${{ !startsWith(github.head_ref, 'docs/') && !startsWith(github.head_ref, 'worflows/') }}
+    if: ${{ !startsWith(github.head_ref, 'docs/') && !startsWith(github.head_ref, 'workflows/') }}
     runs-on: ubuntu-latest
 
     defaults:
@@ -32,15 +32,5 @@ jobs:
       - build_test
     
     runs-on: ubuntu-latest
-    
     steps:
-      - uses: actions/checkout@v4
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: Promote changes
-          title: Promote changes
-          body: Promote changes to main branch
-          branch: develop
-          base: main
-
+      - run: gh pr create -B main -H develop --title 'Promote changes' --body 'Promote changes to main branch'

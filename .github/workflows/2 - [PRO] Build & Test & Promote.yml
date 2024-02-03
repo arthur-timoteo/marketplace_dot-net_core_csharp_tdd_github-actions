@@ -7,7 +7,7 @@ on:
 
 jobs:
   build_test:  
-    if: ${{ !startsWith(github.head_ref, 'docs/') && !startsWith(github.head_ref, 'worflows/') }}
+    if: ${{ !startsWith(github.head_ref, 'docs/') && !startsWith(github.head_ref, 'workflows/') }}
     runs-on: ubuntu-latest
 
     defaults:
