@@ -34,3 +34,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: gh pr create -B main -H develop --title 'Promote changes' --body 'Promote changes to main branch'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
